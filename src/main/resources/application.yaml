@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: spring-ai-chat-client-observability-metrics
+  ai:
+    openai:
+      api-key: ${OPENROUTER_API_KEY}
+      # This is the crucial part: we override the base URL to point to OpenRouter.
+      base-url: https://openrouter.ai/api
+      chat:
+        options:
+          # Here we specify the model from the OpenRouter website.
+          model: openrouter/cypher-alpha:free
+    chat:
+      client:
+        observations:
+          # Enable prompt logging at ChatClient level
+          log-prompt: true
+      observations:
+        # Enable AI response logging
+        log-completion: true
+        # Enable error logging for troubleshooting
+        include-error-logging: true
+
+# Actuator configuration for metrics endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        # Expose all actuator endpoints for monitoring
+        include: "*"

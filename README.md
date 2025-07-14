@@ -6,7 +6,7 @@ This repository contains the source code for the "An AI-Powered Customer Support
 👉 **[Spring AI Observability: A Deep Dive into Chat Client Metrics and Prompt Logging](https://bootcamptoprod.com/spring-ai-chat-client-metrics-guide/)**
 
 🎥 **Visual Learning**: Prefer video tutorials? Watch our step-by-step implementation guide on YouTube.<br>
-👉 **YouTube Tutorial - Coming Soon!**
+👉 YouTube Tutorial - **[📊 Spring AI Chat Client Metrics: Track Token Usage, Prompt & AI Response Logging 🚀](https://youtu.be/fVOUULBZiG4)**
 
 ---
 
